@@ -75,6 +75,7 @@ services:
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
       - caddy-data:/data
+      - ./certs:/etc/caddy/certs:ro
       - caddy-config:/config
     restart: unless-stopped
 
