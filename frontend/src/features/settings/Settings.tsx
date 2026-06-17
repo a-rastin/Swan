@@ -55,14 +55,14 @@ function ProfileSection() {
 
       <label className="block text-sm">
         <span className="text-gray-600">{t("settings.calendar")}</span>
-        <select
-          value={calPref}
-          onChange={(e) => setCalPref(e.target.value)}
-          className="mt-1 w-full rounded border px-3 py-2"
-        >
-          <option value="gregorian">{t("settings.gregorian")}</option>
-          <option value="jalali">{t("settings.jalali")}</option>
-        </select>
+      <select
+        value={calPref}
+        onChange={(e) => setCalPref(e.target.value as "gregorian" | "jalali")}
+        className="mt-1 w-full rounded border px-3 py-2"
+      >
+        <option value="gregorian">{t("settings.gregorian")}</option>
+        <option value="jalali">{t("settings.jalali")}</option>
+      </select>
       </label>
 
       <label className="block text-sm">
