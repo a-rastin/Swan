@@ -69,7 +69,7 @@ services:
       - frontend
     ports:
       - "8080:80"
-      - "2087:2087"
+      - "2087:443"
     environment:
       DOMAIN: ${DOMAIN}
     volumes:
