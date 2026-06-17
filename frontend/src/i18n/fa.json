@@ -1,0 +1,63 @@
+{
+  "app": { "name": "سوان" },
+  "auth": {
+    "login": "ورود",
+    "register": "ساخت حساب",
+    "email": "ایمیل",
+    "password": "رمز عبور",
+    "name": "نام",
+    "noAccount": "حساب ندارید؟ ثبت‌نام",
+    "haveAccount": "حساب دارید؟ ورود",
+    "logout": "خروج"
+  },
+  "nav": {
+    "dashboard": "داشبورد",
+    "lists": "فهرست‌ها",
+    "projects": "پروژه‌ها",
+    "habits": "عادت‌ها",
+    "calendar": "تقویم",
+    "pomodoro": "پومودورو",
+    "ai": "دستیار",
+    "settings": "تنظیمات"
+  },
+  "settings": {
+    "language": "زبان",
+    "calendar": "تقویم",
+    "gregorian": "میلادی",
+    "jalali": "شمسی (جلالی)"
+  },
+  "task": { "add": "افزودن کار", "title": "عنوان", "empty": "هنوز کاری نیست" },
+  "project": {
+    "add": "افزودن پروژه",
+    "name": "نام پروژه",
+    "empty": "هنوز پروژه‌ای نیست",
+    "status": { "active": "فعال", "done": "انجام شده", "archived": "بایگانی" }
+  },
+  "habit": {
+    "add": "افزودن عادت",
+    "name": "نام عادت",
+    "empty": "هنوز عادتی نیست",
+    "streak": "روز متوالی",
+    "schedule": {
+      "daily": "روزانه",
+      "weekly": "هفتگی",
+      "weekdays": "روزهای کاری"
+    }
+  },
+  "pomodoro": {
+    "work": "کار",
+    "shortBreak": "استراحت کوتاه",
+    "longBreak": "استراحت طولانی",
+    "start": "شروع",
+    "pause": "توقف",
+    "reset": "بازنشانی",
+    "cycle": "چرخه",
+    "settings": "تنظیمات",
+    "workMin": "کار (دقیقه)",
+    "shortMin": "استراحت کوتاه (دقیقه)",
+    "longMin": "استراحت طولانی (دقیقه)",
+    "cycles": "چرخه تا استراحت طولانی",
+    "todayFocus": "تمرکز امروز",
+    "minutes": "دقیقه"
+  }
+}

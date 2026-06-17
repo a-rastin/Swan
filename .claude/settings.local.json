@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m py_compile app/services/recurrence.py app/api/v1/tasks.py app/workers/tasks.py app/api/v1/push.py app/api/v1/__init__.py)",
+      "Bash(python scripts/gen_vapid.py)"
+    ]
+  }
+}

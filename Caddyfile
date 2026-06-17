@@ -1,0 +1,21 @@
+# Auto-HTTPS via Let's Encrypt. Set DOMAIN in .env.
+{$DOMAIN} {
+	encode gzip
+
+	# API → backend
+	handle /api/* {
+		reverse_proxy backend:8000
+	}
+
+	# everything else → static frontend (nginx serving the SPA)
+	handle {
+		reverse_proxy frontend:80
+	}
+
+	header {
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "DENY"
+		Referrer-Policy "strict-origin-when-cross-origin"
+	}
+}

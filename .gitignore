@@ -1,11 +1,32 @@
-# generated files
-target/
-generated/
+# env / secrets
+.env
+.env.*
+!.env.example
+*.pem
+service-account*.json
+drive_token.json
 
-# dependencies
-Dependencies.toml
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
-# config files
-Config.toml
-# the config files used for testing, Uncomment the following line if you want to commit the test config files
-#!**/tests/Config.toml
+# node
+node_modules/
+frontend/dist/
+*.local
+
+# docker / data
+postgres-data/
+caddy-data/
+caddy-config/
+redis-data/
+
+# os / editor
+.DS_Store
+.idea/
+.vscode/

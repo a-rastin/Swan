@@ -1,0 +1,63 @@
+{
+  "app": { "name": "Swan" },
+  "auth": {
+    "login": "Log in",
+    "register": "Create account",
+    "email": "Email",
+    "password": "Password",
+    "name": "Name",
+    "noAccount": "No account? Sign up",
+    "haveAccount": "Have an account? Log in",
+    "logout": "Log out"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "lists": "Lists",
+    "projects": "Projects",
+    "habits": "Habits",
+    "calendar": "Calendar",
+    "pomodoro": "Pomodoro",
+    "ai": "Assistant",
+    "settings": "Settings"
+  },
+  "settings": {
+    "language": "Language",
+    "calendar": "Calendar",
+    "gregorian": "Gregorian",
+    "jalali": "Persian (Jalali)"
+  },
+  "task": { "add": "Add task", "title": "Title", "empty": "No tasks yet" },
+  "project": {
+    "add": "Add project",
+    "name": "Project name",
+    "empty": "No projects yet",
+    "status": { "active": "Active", "done": "Done", "archived": "Archived" }
+  },
+  "habit": {
+    "add": "Add habit",
+    "name": "Habit name",
+    "empty": "No habits yet",
+    "streak": "day streak",
+    "schedule": {
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "weekdays": "Weekdays"
+    }
+  },
+  "pomodoro": {
+    "work": "Work",
+    "shortBreak": "Short break",
+    "longBreak": "Long break",
+    "start": "Start",
+    "pause": "Pause",
+    "reset": "Reset",
+    "cycle": "Cycle",
+    "settings": "Settings",
+    "workMin": "Work (min)",
+    "shortMin": "Short break (min)",
+    "longMin": "Long break (min)",
+    "cycles": "Cycles before long break",
+    "todayFocus": "Today focus",
+    "minutes": "min"
+  }
+}
