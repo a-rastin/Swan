@@ -10,10 +10,8 @@ from dateutil.rrule import rrulestr
 def next_occurrence(rrule_str: str, after: datetime) -> datetime | None:
     """Return next datetime after `after` per `rrule_str`. Returns None if no future occurrence."""
     try:
-       anchor = after.replace(tzinfo=None)
-        rule   = rrulestr(rrule_str, dtstart=anchor)
-        nxt    = rule.after(anchor)
-        return nxt.replace(tzinfo=timezone.utc) if nxt else None
+        rule = rrulestr(rrule_str, dtstart=after, ignoretz=True)
+        nxt = rule.after(after.replace(tzinfo=None))
         if nxt is None:
             return None
         return nxt.replace(tzinfo=timezone.utc)
