@@ -9,9 +9,9 @@ export async function subscribePush(vapidPublicKey: string): Promise<boolean> {
     if (existing) return true;
 
     const sub = await reg.pushManager.subscribe({
-      userVisibleOnly: true,
-      applicationServerKey: urlBase64ToUint8Array(vapidPublicKey),
-    });
+    userVisibleOnly: true,
+    applicationServerKey: urlBase64ToUint8Array(vapidPublicKey).buffer as ArrayBuffer,
+  });
 
     const json = sub.toJSON();
     if (!json.keys) return false;
